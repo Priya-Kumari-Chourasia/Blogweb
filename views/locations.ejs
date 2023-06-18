@@ -1,0 +1,37 @@
+<!--
+<h1 class="pb-4">Explore Location</h1>
+
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="/locations">Location</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Explore Location</li>
+    </ol>
+  </nav>
+
+
+
+<div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 mb-4">
+<% if(typeof locations !== 'undefined' && locations.length >0) { %>
+    <% locations.forEach(function(location, index){ %>
+<a href="/locations/<%- location.name %>" class="col text-center category__link">
+    <div class="category__img shadow">
+        <img src="img/<%- location.image %>" alt="<%- category.name%>" loading="lazy">
+    </div>
+    <div class="pt-1"><%- location.name %></div>
+</a>
+<% }) %>
+<% } %>
+</div>
+-->
+
+<h1 class="pb-4">Explore Location</h1>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="/locations">Categories</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Explore Categories</li>
+  </ol>
+</nav>
